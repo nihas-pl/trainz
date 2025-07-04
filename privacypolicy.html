@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainz - The Gym, Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        kufam: ['Kufam', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            /* Fallback for older browsers */
+            min-height: 100vh;
+            /* Fallback for browsers not supporting dvh */
+            height: 100dvh;
+            /* Use dynamic viewport height (modern mobile-friendly) */
+            min-height: 100dvh;
+            /* Ensure content can push height */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            /* Allow vertical scrolling for the rest of the page */
+        }
+
+        /* Explicitly apply dvh to the hero section for a robust full-screen effect */
+        /* This ensures it truly takes up the full dynamic viewport height */
+        .hero-section-full-height {
+            height: 100%;
+            /* Fallback */
+            min-height: 100vh;
+            /* Fallback */
+            height: 100dvh;
+            /* Dynamic viewport height for hero section */
+            min-height: 100dvh;
+            /* Dynamic viewport height for hero section */
+        }
+    </style>
+</head>
+
+<body class="bg-black font-kufam">
+
+    <section class="border-b border-white/20">
+        <div class="p-10">
+            <div class="grid grid-cols-2 gap-0 w-full">
+                <div><a href="index.html"><img src="image/trainz.svg" alt="Trainz Logo"></a></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 text-gray-400 ">
+            <div class="max-w-4xl w-full mx-auto my-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-center text-white mb-6 sm:mb-8">Privacy Policy</h1>
+                <p class="text-sm text-gray-400 text-center mb-6">Last Updated: July 4, 2025</p>
+
+                <p class="mb-6 leading-relaxed">
+                    Your privacy is important to us. This Privacy Policy explains how <strong
+                        class="font-semibold text-white">Trainz</strong> (the "App"), operated by <strong
+                        class="font-semibold">AccoreLab IT Solutions Co., LLC</strong>, collects, uses, discloses, and
+                    protects your information when you use our mobile application. By using the App, you agree to the
+                    collection and use of information in accordance with this policy.
+                </p>
+
+                <!-- Section 1: Information We Collect -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">1. Information We Collect</h2>
+                    <p class="mb-4 leading-relaxed">
+                        We collect several types of information from and about users of our App:
+                    </p>
+
+                    <h3 class="text-xl sm:text-2xl font-medium text-gray-400mb-3 ml-4">1.1. Information You Provide
+                        Directly</h3>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-8">
+                        <li>
+                            <strong class="font-medium">Account Information:</strong> When you create an account, we
+                            collect information such as your name, email address, password, <strong
+                                class="font-medium"></strong> membership ID, and profile picture (if you
+                            choose to upload one).
+                        </li>
+                        <li>
+                            <strong class="font-medium">Profile Information:</strong> You may choose to add additional
+                            information to your public profile, such as your fitness goals or preferred workout types.
+                        </li>
+                        <li>
+                            <strong class="font-medium">User Content:</strong> This includes any workout videos, photos,
+                            comments, text, or other content you post, upload, or share through the App.
+                        </li>
+                        <li>
+                            <strong class="font-medium">Communication Information:</strong> Records of your
+                            correspondence with us, such as customer support inquiries.
+                        </li>
+                        <li>
+                            <strong class="font-medium">Challenge Participation Data:</strong> Information you provide
+                            when participating in challenges, which may include details relevant to tracking your
+                            progress (e.g., specific workout logs if required by a challenge).
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl sm:text-2xl font-medium text-gray-400mb-3 mt-6 ml-4">1.2. Information We Collect
+                        Automatically</h3>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-8">
+                        <li>
+                            <strong class="font-medium">Usage Data:</strong> We collect information on how you access
+                            and use the App, such as features you use, the time and date of your visits, the pages you
+                            view, time spent on certain sections, and other diagnostic data.
+                        </li>
+                        <li>
+                            <strong class="font-medium">Device Information:</strong> We may collect information about
+                            the mobile device you use to access our App, including but not limited to your device model,
+                            operating system, unique device identifiers, and mobile network information.
+                        </li>
+                        <li>
+                            <strong class="font-medium">Location Information:</strong> With your permission, we may
+                            collect precise location data from your device to provide location-based features (e.g.,
+                            verifying gym attendance). You can enable or disable location services when you use our App
+                            at any time, through your device settings.
+                        </li>
+                        <li>
+                            <strong class="font-medium">Attendance Data:</strong> We receive information from <strong
+                                class="font-medium"></strong> regarding your gym attendance, which is used to
+                            award stars and update leaderboards within the App. This data is linked to your membership
+                            ID.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Section 2: How We Use Your Information -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">2. How We Use Your Information
+                    </h2>
+                    <p class="mb-4 leading-relaxed">
+                        We use the information we collect for various purposes, including to:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-4">
+                        <li><strong class="font-medium">Provide and Maintain the App:</strong> Operate, maintain, and
+                            improve the functionality of the App.</li>
+                        <li><strong class="font-medium">Personalize Your Experience:</strong> Present content and
+                            features tailored to your interests and activity within the App.</li>
+                        <li><strong class="font-medium">Facilitate Community Interaction:</strong> Allow you to post
+                            content, connect with other members, and enable features like commenting and liking.</li>
+                        <li><strong class="font-medium">Manage Leaderboards:</strong> Track your gym attendance and
+                            challenge participation to update and display leaderboards.</li>
+                        <li><strong class="font-medium">Administer Challenges and Rewards:</strong> Facilitate your
+                            participation in gym challenges and manage the distribution of prizes.</li>
+                        <li><strong class="font-medium">Communicate with You:</strong> Send you notifications, updates,
+                            security alerts, and support messages.</li>
+                        <li><strong class="font-medium">Monitor and Analyze Usage:</strong> Understand how users
+                            interact with the App to identify trends, diagnose problems, and improve our services.</li>
+                        <li><strong class="font-medium">Ensure Security:</strong> Protect the security and integrity of
+                            the App and our users.</li>
+                        <li><strong class="font-medium">Comply with Legal Obligations:</strong> Meet legal and
+                            regulatory requirements.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: How We Share Your Information -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">3. How We Share Your Information
+                    </h2>
+                    <p class="mb-4 leading-relaxed">
+                        We may share your information in the following situations:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-4">
+                        <li>
+                            <strong class="font-medium">With <strong class="font-medium"></strong>:</strong>
+                            We share your membership ID, attendance data, challenge participation, and leaderboard
+                            status with <strong class="font-medium"></strong> to facilitate core app
+                            functions, challenge administration, and membership verification.
+                        </li>
+                        <li>
+                            <strong class="font-medium">With Other App Users:</strong> Your profile picture, username,
+                            posted content (videos, photos, comments), and leaderboard rankings will be visible to other
+                            members within the App.
+                        </li>
+                        <li>
+                            <strong class="font-medium">With Service Providers:</strong> We may share your information
+                            with third-party vendors and service providers who perform services on our behalf, such as
+                            hosting, data analysis, payment processing, customer service, and marketing assistance.
+                            These providers are obligated to protect your information and use it only for the purposes
+                            for which it was disclosed.
+                        </li>
+                        <li>
+                            <strong class="font-medium">For Business Transfers:</strong> In connection with any merger,
+                            sale of company assets, financing, or acquisition of all or a portion of our business by
+                            another company, your information may be transferred.
+                        </li>
+                        <li>
+                            <strong class="font-medium">For Legal Reasons:</strong> We may disclose your information if
+                            required to do so by law or in response to valid requests by public authorities (e.g., a
+                            court or government agency).
+                        </li>
+                        <li>
+                            <strong class="font-medium">To Protect Our Rights:</strong> To enforce our Terms and
+                            Conditions, investigate potential violations, detect, prevent, or otherwise address fraud,
+                            security, or technical issues, or protect against harm to the rights, property, or safety of
+                            <strong class="font-medium">Trainz</strong>, our users, or the public as required
+                            or permitted by law.
+                        </li>
+                        <li>
+                            <strong class="font-medium">With Your Consent:</strong> We may share your information for
+                            any other purpose with your explicit consent.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Section 4: Data Security -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">4. Data Security</h2>
+                    <p class="mb-4 leading-relaxed">
+                        We implement reasonable technical and organizational measures designed to protect your personal
+                        information from unauthorized access, use, alteration, and disclosure. However, no method of
+                        transmission over the Internet or method of electronic storage is 100% secure. While we strive
+                        to use commercially acceptable means to protect your personal information, we cannot guarantee
+                        its absolute security.
+                    </p>
+                </div>
+
+                <!-- Section 5: Data Retention -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">5. Data Retention</h2>
+                    <p class="mb-4 leading-relaxed">
+                        We retain your personal information for as long as necessary to fulfill the purposes outlined in
+                        this Privacy Policy, unless a longer retention period is required or permitted by law (such as
+                        for tax, accounting, or other legal requirements). When we no longer have a legitimate business
+                        need to process your personal information, we will either delete or anonymize it.
+                    </p>
+                </div>
+
+                <!-- Section 6: Your Data Protection Rights -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">6. Your Data Protection Rights
+                    </h2>
+                    <p class="mb-4 leading-relaxed">
+                        Depending on your jurisdiction, you may have the following data protection rights:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-4">
+                        <li><strong class="font-medium">Right to Access:</strong> The right to request copies of your
+                            personal data.</li>
+                        <li><strong class="font-medium">Right to Rectification:</strong> The right to request that we
+                            correct any information you believe is inaccurate or complete information you believe is
+                            incomplete.</li>
+                        <li><strong class="font-medium">Right to Erasure:</strong> The right to request that we erase
+                            your personal data, under certain conditions.</li>
+                        <li><strong class="font-medium">Right to Restrict Processing:</strong> The right to request that
+                            we restrict the processing of your personal data, under certain conditions.</li>
+                        <li><strong class="font-medium">Right to Object to Processing:</strong> The right to object to
+                            our processing of your personal data, under certain conditions.</li>
+                        <li><strong class="font-medium">Right to Data Portability:</strong> The right to request that we
+                            transfer the data that we have collected to another organization, or directly to you, under
+                            certain conditions.</li>
+                        <li><strong class="font-medium">Right to Withdraw Consent:</strong> Where we rely on your
+                            consent to process your personal information, you have the right to withdraw that consent at
+                            any time.</li>
+                    </ul>
+                    <p class="mt-4 leading-relaxed">
+                        To exercise any of these rights, please contact us using the details provided in the "Contact
+                        Us" section below.
+                    </p>
+                </div>
+
+                <!-- Section 7: Children's Privacy -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">7. Children's Privacy</h2>
+                    <p class="mb-4 leading-relaxed">
+                        Our App is not intended for use by anyone under the age of 18 (or the age of legal majority in
+                        your jurisdiction). We do not knowingly collect personally identifiable information from anyone
+                        under 18. If you are a parent or guardian and you are aware that your child has provided us with
+                        Personal Data, please contact us. If we become aware that we have collected Personal Data from
+                        children without verification of parental consent, we take steps to remove that information from
+                        our servers.
+                    </p>
+                </div>
+
+                <!-- Section 8: International Data Transfers -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">8. International Data Transfers
+                    </h2>
+                    <p class="mb-4 leading-relaxed">
+                        Your information, including personal data, may be transferred to — and maintained on — computers
+                        located outside of your state, province, country, or other governmental jurisdiction where the
+                        data protection laws may differ from those of your jurisdiction. Your consent to this Privacy
+                        Policy followed by your submission of such information represents your agreement to that
+                        transfer.
+                    </p>
+                </div>
+
+                <!-- Section 9: Changes to This Privacy Policy -->
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">9. Changes to This Privacy
+                        Policy</h2>
+                    <p class="mb-4 leading-relaxed">
+                        We may update our Privacy Policy from time to time. We will notify you of any changes by posting
+                        the new Privacy Policy on this page and updating the "Last Updated" date at the top of this
+                        policy. You are advised to review this Privacy Policy periodically for any changes. Changes to
+                        this Privacy Policy are effective when they are posted on this page.
+                    </p>
+                </div>
+
+                <!-- Section 10: Contact Us -->
+                <div class="mb-0">
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">10. Contact Us</h2>
+                    <p class="mb-4 leading-relaxed">
+                        If you have any questions about this Privacy Policy, please contact us:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400space-y-2 ml-4">
+                        <li>By email: <strong class="font-medium">info@accorelab.com</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="text-black container mx-auto py-20 bg-black">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4 px-8 md:px-0">
+                <div>
+                    <img src="image/trainz.svg" alt="Trainz Logo">
+                    <p class="text-white/40 text-balance my-8">
+                        You focus on training.<br>
+                        We’ll handle the motivation.
+                    </p>
+                    <div class="flex">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-instagram-icon lucide-instagram text-white/60 me-4 hover:text-[#FFBF5D] transition-all duration-500">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-linkedin-icon lucide-linkedin text-white/60 hover:text-[#FFBF5D] transition-all duration-500">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="pt-16 space-y-4">
+                    <a href="termsandconditions.html" class="text-white/60 hover:text-[#FFBF5D] transition-all duration-500 block">Terms and
+                        conditions</a>
+                    <a href="privacypolicy.html" class="text-white/60 hover:text-[#FFBF5D] transition-all duration-500 block">Privacy
+                        policy</a>
+                </div>
+                <div class="pt-16">
+                    <p class="text-white/60 capitalize flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin me-3">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        moosa tower 2, sheikh zayed road, trade center 1, dubai, UAE
+                    </p>
+                    <p class="text-white/60 flex mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone-icon lucide-phone me-3">
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
+                        +971 56 805 8642
+                    </p>
+                </div>
+            </div>
+            <p class="text-white/60 text-right font-light text-xs mt-5">
+                © Copyright 2025, All Rights Reserved by AccoreLab IT Solutions Co., LLC
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

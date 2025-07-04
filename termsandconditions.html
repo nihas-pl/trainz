@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainz - The Gym, Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        kufam: ['Kufam', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            /* Fallback for older browsers */
+            min-height: 100vh;
+            /* Fallback for browsers not supporting dvh */
+            height: 100dvh;
+            /* Use dynamic viewport height (modern mobile-friendly) */
+            min-height: 100dvh;
+            /* Ensure content can push height */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            /* Allow vertical scrolling for the rest of the page */
+        }
+
+        /* Explicitly apply dvh to the hero section for a robust full-screen effect */
+        /* This ensures it truly takes up the full dynamic viewport height */
+        .hero-section-full-height {
+            height: 100%;
+            /* Fallback */
+            min-height: 100vh;
+            /* Fallback */
+            height: 100dvh;
+            /* Dynamic viewport height for hero section */
+            min-height: 100dvh;
+            /* Dynamic viewport height for hero section */
+        }
+    </style>
+</head>
+
+<body class="bg-black font-kufam">
+
+    <section class="border-b border-white/20">
+        <div class="p-10">
+            <div class="grid grid-cols-2 gap-0 w-full">
+                <div><a href="index.html"><img src="image/trainz.svg" alt="Trainz Logo"></a></div>
+            </div>
+        </div>
+    </section>
+    <section>
+       <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 text-gray-400 ">
+        <div class="max-w-4xl w-full mx-auto my-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-center text-white mb-6 sm:mb-8">Terms and Conditions</h1>
+            <p class="text-sm text-gray-400  text-center mb-6">Last Updated: July 4, 2025</p>
+
+            <p class="mb-6 leading-relaxed">
+                Welcome to <strong class="font-semibold text-white">Trainz</strong>, the community hub for <strong class="font-semibold"></strong> members! These Terms and Conditions ("Terms") govern your access to and use of the <strong class="font-semibold">Trainz</strong> mobile application (the "App"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you may not use the App.
+            </p>
+
+            <!-- Section 1: Acceptance of Terms -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">1. Acceptance of Terms</h2>
+                <p class="mb-4 leading-relaxed">
+                    By accessing or using our App, you confirm that you have read, understood, and agree to be bound by these Terms and by our Privacy Policy. We may update these Terms from time to time, and we will notify you of any significant changes. Your continued use of the App after such changes constitutes your acceptance of the new Terms.
+                </p>
+            </div>
+
+            <!-- Section 2: Eligibility -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">2. Eligibility</h2>
+                <p class="mb-4 leading-relaxed">
+                    You must be a registered member of <strong class="font-semibold"></strong> to use this App. By using the App, you represent and warrant that you are at least 18 years of age (or the age of legal majority in your jurisdiction) and capable of entering into a binding agreement.
+                </p>
+            </div>
+
+            <!-- Section 3: User Accounts and Registration -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">3. User Accounts and Registration</h2>
+                <p class="mb-4 leading-relaxed">
+                    To use certain features of the App, you will need to create an account. You agree to:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li>Provide accurate, current, and complete information during the registration process.</li>
+                    <li>Maintain and promptly update your account information to keep it accurate, current, and complete.</li>
+                    <li>Maintain the security of your password and identification.</li>
+                    <li>Accept all risks of unauthorized access to your account and the information you provide.</li>
+                    <li>Immediately notify us if you discover or otherwise suspect any security breaches related to the App.</li>
+                </ul>
+            </div>
+
+            <!-- Section 4: User Content -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">4. User Content</h2>
+                <p class="mb-4 leading-relaxed">
+                    The App allows you to post workout videos, photos, comments, and other content ("User Content"). You retain all rights in, and are solely responsible for, the User Content you post to the App.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    By posting User Content, you grant <strong class="font-semibold">Trainz</strong> and <strong class="font-semibold"></strong> a non-exclusive, royalty-free, transferable, sub-licensable, worldwide license to use, store, display, reproduce, modify, create derivative works, perform, and distribute your User Content on and in connection with the App and the promotion of the App or <strong class="font-semibold"></strong>.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    You agree not to post, upload, transmit, distribute, store, create or otherwise publish through the App any of the following:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li>User Content that is unlawful, libelous, defamatory, obscene, pornographic, indecent, lewd, suggestive, harassing, threatening, invasive of privacy or publicity rights, abusive, inflammatory, fraudulent, or otherwise objectionable.</li>
+                    <li>User Content that would constitute, encourage or provide instructions for a criminal offense, violate the rights of any party, or that would otherwise create liability or violate any local, state, national or international law.</li>
+                    <li>User Content that may infringe any patent, trademark, trade secret, copyright, or other intellectual or proprietary right of any party.</li>
+                    <li>User Content that impersonates any person or entity or otherwise misrepresents your affiliation with a person or entity.</li>
+                    <li>Unsolicited promotions, political campaigning, advertising, or solicitations.</li>
+                    <li>Private information of any third party, including, without limitation, addresses, phone numbers, email addresses, Social Security numbers, and credit card numbers.</li>
+                    <li>Viruses, corrupted data, or other harmful, disruptive, or destructive files.</li>
+                    <li>User Content that, in the sole judgment of <strong class="font-semibold">Trainz</strong> or <strong class="font-semibold"></strong>, is objectionable or which restricts or inhibits any other person from using or enjoying the App, or which may expose <strong class="font-semibold">Trainz</strong> or <strong class="font-semibold"></strong> or its users to any harm or liability of any type.</li>
+                </ul>
+                <p class="mt-4 leading-relaxed">
+                    We reserve the right, but are not obligated, to remove or edit any User Content for any reason.
+                </p>
+            </div>
+
+            <!-- Section 5: Community Guidelines and Conduct -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">5. Community Guidelines and Conduct</h2>
+                <p class="mb-4 leading-relaxed">
+                    You agree to use the App in a respectful and appropriate manner. This includes, but is not limited to:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li><strong class="font-medium">Respectful Interaction:</strong> Engage with other members respectfully. Harassment, bullying, hate speech, or any form of derogatory comments are strictly prohibited.</li>
+                    <li><strong class="font-medium">Appropriate Content:</strong> Ensure your shared content is suitable for a general audience and gym environment.</li>
+                    <li><strong class="font-medium">No Spamming:</strong> Do not post repetitive or unsolicited content.</li>
+                    <li><strong class="font-medium">Fair Play in Challenges:</strong> Participate in challenges honestly and according to the rules set by <strong class="font-medium"></strong>. Any attempt to manipulate results or cheat will lead to disqualification and potential account suspension.</li>
+                </ul>
+            </div>
+
+            <!-- Section 6: Leaderboards and Rewards -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">6. Leaderboards and Rewards</h2>
+                <p class="mb-4 leading-relaxed">
+                    The App features leaderboards based on gym attendance (stars) and participation in challenges.
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li><strong class="font-medium">Stars:</strong> Stars are awarded for consistent gym attendance as tracked by <strong class="font-medium"></strong>. The awarding of stars and your ranking on leaderboards are subject to the sole discretion of <strong class="font-medium"></strong>.</li>
+                    <li><strong class="font-medium">Challenges and Prizes:</strong> <strong class="font-medium"></strong> may offer challenges within the App with potential prizes (e.g., protein powder sponsored by vendors). Participation in challenges is voluntary. Prizes are awarded at the sole discretion of <strong class="font-medium"></strong> based on challenge rules. Prizes are non-transferable and may be subject to availability. <strong class="font-semibold">Trainz</strong> is not responsible for the fulfillment, quality, or any issues related to sponsored prizes. Any claims regarding prizes should be directed to <strong class="font-medium"></strong>.</li>
+                </ul>
+            </div>
+
+            <!-- Section 7: Intellectual Property -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">7. Intellectual Property</h2>
+                <p class="mb-4 leading-relaxed">
+                    The App and its original content, features, and functionality are and will remain the exclusive property of <strong class="font-semibold">Trainz</strong> and its licensors. The App is protected by copyright, trademark, and other laws of both <strong class="font-semibold">United Arab Emirates</strong> and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of <strong class="font-semibold">Trainz</strong>.
+                </p>
+            </div>
+
+            <!-- Section 8: Disclaimers -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">8. Disclaimers</h2>
+                <p class="mb-4 leading-relaxed">
+                    The App is provided on an "AS IS" and "AS AVAILABLE" basis. <strong class="font-semibold">Trainz</strong> and <strong class="font-semibold"></strong> make no warranties, express or implied, regarding the App, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    <strong class="font-semibold">Trainz</strong> and <strong class="font-semibold"></strong> do not warrant that:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li>The App will function uninterrupted, securely, or be available at any particular time or location.</li>
+                    <li>Any errors or defects will be corrected.</li>
+                    <li>The App is free of viruses or other harmful components.</li>
+                    <li>The results of using the App will meet your requirements.</li>
+                </ul>
+            </div>
+
+            <!-- Section 9: Limitation of Liability -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">9. Limitation of Liability</h2>
+                <p class="mb-4 leading-relaxed">
+                    In no event shall <strong class="font-semibold">Trainz</strong>, <strong class="font-semibold"></strong>, nor their directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li>Your access to or use of or inability to access or use the App.</li>
+                    <li>Any conduct or content of any third party on the App.</li>
+                    <li>Any content obtained from the App.</li>
+                    <li>Unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</li>
+                </ul>
+            </div>
+
+            <!-- Section 10: Indemnification -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">10. Indemnification</h2>
+                <p class="mb-4 leading-relaxed">
+                    You agree to defend, indemnify, and hold harmless <strong class="font-semibold">Trainz</strong>, <strong class="font-semibold"></strong> and their licensees and licensors, and their employees, contractors, agents, officers, and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li>Your use and access of the App, by you or any person using your account and password.</li>
+                    <li>A breach of these Terms.</li>
+                    <li>User Content posted on the App.</li>
+                </ul>
+            </div>
+
+            <!-- Section 11: Termination -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">11. Termination</h2>
+                <p class="mb-4 leading-relaxed">
+                    We may terminate or suspend your account and bar access to the App immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    If you wish to terminate your account, you may simply discontinue using the App. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+                </p>
+            </div>
+
+            <!-- Section 12: Governing Law -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">12. Governing Law</h2>
+                <p class="mb-4 leading-relaxed">
+                    These Terms shall be governed and construed in accordance with the laws of <strong class="font-semibold">United Arab Emirates / Dubai</strong>, without regard to its conflict of law provisions.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.
+                </p>
+            </div>
+
+            <!-- Section 13: Changes to Terms -->
+            <div class="mb-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">13. Changes to Terms</h2>
+                <p class="mb-4 leading-relaxed">
+                    We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    By continuing to access or use our App after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the App.
+                </p>
+            </div>
+
+            <!-- Section 14: Contact Us -->
+            <div class="mb-0">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">14. Contact Us</h2>
+                <p class="mb-4 leading-relaxed">
+                    If you have any questions about these Terms, please contact us at:
+                </p>
+                <ul class="list-disc list-inside  space-y-2 ml-4">
+                    <li><strong class="font-medium">info@accorelab.com</strong></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="text-black container mx-auto py-20 bg-black">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4 px-8 md:px-0">
+                <div>
+                    <img src="image/trainz.svg" alt="Trainz Logo">
+                    <p class="text-white/40 text-balance my-8">
+                        You focus on training.<br>
+                        We’ll handle the motivation.
+                    </p>
+                    <div class="flex">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-instagram-icon lucide-instagram text-white/60 me-4 hover:text-[#FFBF5D] transition-all duration-500">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-linkedin-icon lucide-linkedin text-white/60 hover:text-[#FFBF5D] transition-all duration-500">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="pt-16 space-y-4">
+                    <a href="termsandconditions.html" class="text-white/60 hover:text-[#FFBF5D] transition-all duration-500 block">Terms and
+                        conditions</a>
+                    <a href="privacypolicy.html" class="text-white/60 hover:text-[#FFBF5D] transition-all duration-500 block">Privacy
+                        policy</a>
+                </div>
+                <div class="pt-16">
+                    <p class="text-white/60 capitalize flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin me-3">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        moosa tower 2, sheikh zayed road, trade center 1, dubai, UAE
+                    </p>
+                    <p class="text-white/60 flex mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone-icon lucide-phone me-3">
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
+                        +971 56 805 8642
+                    </p>
+                </div>
+            </div>
+            <p class="text-white/60 text-right font-light text-xs mt-5">
+                © Copyright 2025, All Rights Reserved by AccoreLab IT Solutions Co., LLC
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
