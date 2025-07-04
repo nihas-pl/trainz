@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="image/fav.png">
+    <link rel="icon" type="image/x-icon" href="image/fav.png">
     <style>
         html,
         body {
@@ -53,32 +53,33 @@
             /* Dynamic viewport height for hero section */
         }
 
-       .video-container {
-        position: relative;
-        width: 100%;
-        height: 100vh; /* Example: set to viewport height. Adjust as needed */
-        overflow: hidden;
-    }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Example: set to viewport height. Adjust as needed */
+            overflow: hidden;
+        }
 
-    .video-placeholder {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
 
-    #vimeo-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* Add transition for a smoother fade-in, optional */
-        transition: opacity 0.5s ease-in-out;
-    }
+        #vimeo-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Add transition for a smoother fade-in, optional */
+            transition: opacity 0.5s ease-in-out;
+        }
     </style>
 </head>
 
@@ -147,7 +148,7 @@
                     src="https://player.vimeo.com/video/1098484680?autoplay=1&muted=1&loop=1&background=1&badge=0&autopause=0&player_id=0&app_id=58479"
                     class="w-full h-full object-cover block md:scale-150 scale-[3.9] -mt-px -mb-px" frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    title="trainz" style="display:none;"></iframe>
+                    title="trainz" style="display:none;" playsinline></iframe>
             </div>
         </div>
 
@@ -334,65 +335,65 @@
         </div>
     </section>
 
-   <script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var iframe = document.getElementById('vimeo-video');
-        var player = new Vimeo.Player(iframe);
-        var placeholderImage = document.getElementById('placeholder-image');
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var iframe = document.getElementById('vimeo-video');
+            var player = new Vimeo.Player(iframe);
+            var placeholderImage = document.getElementById('placeholder-image');
 
-        // Initially show placeholder and hide video
-        placeholderImage.style.display = 'block';
-        iframe.style.opacity = '0'; // Start with opacity 0 for smooth transition
-        iframe.style.display = 'none'; // Keep it truly hidden until ready
+            // Initially show placeholder and hide video
+            placeholderImage.style.display = 'block';
+            iframe.style.opacity = '0'; // Start with opacity 0 for smooth transition
+            iframe.style.display = 'none'; // Keep it truly hidden until ready
 
-        // Flag to prevent multiple showings
-        let videoShown = false;
+            // Flag to prevent multiple showings
+            let videoShown = false;
 
-        function showVideo() {
-            if (!videoShown) {
-                console.log('Video is ready to be shown!');
-                placeholderImage.style.display = 'none';
-                iframe.style.display = 'block';
-                // Trigger reflow to ensure display:block takes effect before transition
-                iframe.offsetWidth; // This forces a reflow
-                iframe.style.opacity = '1';
-                videoShown = true;
+            function showVideo() {
+                if (!videoShown) {
+                    console.log('Video is ready to be shown!');
+                    placeholderImage.style.display = 'none';
+                    iframe.style.display = 'block';
+                    // Trigger reflow to ensure display:block takes effect before transition
+                    iframe.offsetWidth; // This forces a reflow
+                    iframe.style.opacity = '1';
+                    videoShown = true;
+                }
             }
-        }
 
-        player.on('loaded', function() {
-            console.log('Vimeo Player: "loaded" event fired.');
-            showVideo();
+            player.on('loaded', function () {
+                console.log('Vimeo Player: "loaded" event fired.');
+                showVideo();
+            });
+
+            // Fallback or alternative: Use the 'play' event
+            // This fires when the video actually starts playing.
+            // It might be more reliable for visibility if 'loaded' isn't enough.
+            player.on('play', function () {
+                console.log('Vimeo Player: "play" event fired.');
+                showVideo();
+            });
+
+            player.on('error', function (error) {
+                console.error('Vimeo Player Error:', error);
+                // Optionally, remove the placeholder or show an error message
+                // placeholderImage.style.display = 'none';
+                // alert('Video failed to load: ' + error.name);
+            });
+
+            // Debugging: Check if the player object is created
+            console.log('Vimeo Player object created:', player);
+
+            // Debugging: If the video needs to be manually triggered to load
+            // In some cases, if autoplay is prevented, the video might not load
+            // until a play command is issued.
+            // You can try an immediate play() call, but it might be blocked by browser policies.
+            // player.play().catch(function(error) {
+            //     console.warn('Attempted to play immediately, but caught error (likely autoplay blocked):', error.name);
+            // });
         });
-
-        // Fallback or alternative: Use the 'play' event
-        // This fires when the video actually starts playing.
-        // It might be more reliable for visibility if 'loaded' isn't enough.
-        player.on('play', function() {
-            console.log('Vimeo Player: "play" event fired.');
-            showVideo();
-        });
-
-        player.on('error', function(error) {
-            console.error('Vimeo Player Error:', error);
-            // Optionally, remove the placeholder or show an error message
-            // placeholderImage.style.display = 'none';
-            // alert('Video failed to load: ' + error.name);
-        });
-
-        // Debugging: Check if the player object is created
-        console.log('Vimeo Player object created:', player);
-
-        // Debugging: If the video needs to be manually triggered to load
-        // In some cases, if autoplay is prevented, the video might not load
-        // until a play command is issued.
-        // You can try an immediate play() call, but it might be blocked by browser policies.
-        // player.play().catch(function(error) {
-        //     console.warn('Attempted to play immediately, but caught error (likely autoplay blocked):', error.name);
-        // });
-    });
-</script>
+    </script>
 </body>
 
 </html>
